@@ -103,11 +103,11 @@ That was example using the library to your project.
 
 ## Contributing
 
-Contributions are always welcome! Feel free to fork the [repository](https://reiyanyan/vue-camera) and submit pull requests.
+Contributions are always welcome! Feel free to fork the [repository](https://github.com/reiyanyan/vue-camera) and submit pull requests.
 
 ## Issues
 
-If you find any bug or have a feature request, please file an issue on [Github](https://reiyanyan/vue-camera).
+If you find any bug or have a feature request, please file an issue on [Github](https://github.com/reiyanyan/vue-camera).
 
 ---
 
