@@ -22,5 +22,8 @@
     "prettier": "^3.2.5",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "beautify-console-log": "^1.2.1"
   }
 }
