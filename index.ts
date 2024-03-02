@@ -1,7 +1,9 @@
 // import consoled from "consoled.js";
-import BeautifyConsole from "beautify-console-log";
+// import BeautifyConsole from "beautify-console-log";
 
-const log = new BeautifyConsole();
+// const log = new BeautifyConsole();
+import { LoggerAdaptToConsole } from "console-log-json";
+LoggerAdaptToConsole();
 
 /* -------------------------------------------------------------------------- */
 /*                                 Simple Docs                                */
@@ -78,7 +80,7 @@ export default class ReiCamera {
         });
         resolve(this.devices);
       } catch (error) {
-        log.error("GetDevices", error);
+        console.error("GetDevices", error);
         reject(error);
       }
     });
@@ -137,7 +139,7 @@ export default class ReiCamera {
         });
         resolve();
       } catch (error) {
-        log.error("StartAsync", error);
+        console.error("StartAsync", error);
         reject(error);
       }
     });
@@ -174,7 +176,7 @@ export default class ReiCamera {
     try {
       this.start();
     } catch (err) {
-      log.error("FlipCamera", err);
+      console.error("FlipCamera", err);
     }
 
     return this;
@@ -185,7 +187,7 @@ export default class ReiCamera {
       try {
         this.snap().toBlob((blob) => resolve(blob), mime, 1);
       } catch (err) {
-        log.error("SnapAsBlob", err);
+        console.error("SnapAsBlob", err);
         reject(err);
       }
     });
@@ -196,7 +198,7 @@ export default class ReiCamera {
       try {
         resolve(this.snap().toDataURL(mime));
       } catch (err) {
-        log.error("Snap as b64", err);
+        console.error("Snap as b64", err);
         reject(err);
       }
     });
